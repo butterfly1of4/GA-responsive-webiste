@@ -1,4 +1,7 @@
-
+*{
+    box-sizing: border-box;
+    
+}
 html, body {
     width: 100%;
     height: auto;
@@ -68,12 +71,13 @@ h1 {
     margin-top: 12%;
     height: 100px;
     margin-bottom: 10px;
+    
 }
 
 .godp {
 
     font-size: 18px;
-
+    font-family: 'Open-sans', sans-serif;
     height: 50px;
     justify-self: center;
     text-align: center;
@@ -88,13 +92,14 @@ button {
     font-size: 12px;
     padding: 18px 47px 18px 47px;
     margin: 50px;
+    border-radius: 24px 24px 24px;
 
 }
 .about {
     grid-row: 2;
     grid-column: 1;
-    /*background-color: #F3F7F8;*/
-    background-color: blue;
+    background-color: #F3F7F8;
+
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
@@ -152,8 +157,7 @@ h4 {
     padding: 120px 150px 12px auto;
     margin-right: 10%;
     grid-column: 2;
-   
-    
+
 }
 
 h6 {
@@ -165,10 +169,12 @@ h6 {
     text-align: center;
 }
  .buyme {
-     align-items: flex-start;
+     align-items: flex-end;
      padding-left: 120px;
      padding-bottom: 0;
      align-self: flex-end;
+     margin-top: auto;margin-bottom: 10px;
+
  }
 .viewmore {
     color: #1D1D1D;
@@ -176,8 +182,14 @@ h6 {
     align-items: flex-end;
     padding-bottom: 0;
     align-self: flex-end;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
-
+.arrow {
+    margin-left: 20px;
+    height: 15px;
+}
 .producthead {
     width: 100%;
     height: 120px;
@@ -196,6 +208,8 @@ h6 {
     font-family: 'Open sans';
     display: table-cell;
     vertical-align: bottom;
+    text-align: left;
+    align-content: flex-end;
 }
 
 .products{
@@ -203,28 +217,34 @@ h6 {
     grid-row: 3;
     height: 888px;
     grid-column: 1;
-    background-color: red;
     display: grid;
-  
 }
 
+.textbox {
+    text-align: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    position: relative;
+}
 .container {
-    display: flex;
+    display: grid;
     padding: 122px 120px 122px 120px;
-    background-color: cyan;
     background-position: center;
     background-size: cover;
     padding-bottom: 122px;
     margin-bottom: 0;
+    height: 705px;
+
 }
 
 .grid { 
     grid-template-rows: 50% 50%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    display: grid; 
+    display: grid;
     grid-gap: 30px 30px;
     align-content: flex-end;
     box-sizing: border-box;
+    
 }
 .parcel {
     grid-row: 1/ span 2;
@@ -232,26 +252,36 @@ h6 {
     background-color: #F4F4F4;
     display: table-cell;
     vertical-align: bottom;
+    background-image: url("imports/pics/redbag.jpg");
+    background-position: center;
+    background-size: contain;
 }    
 
 .koo {
     grid-row: 1;
     grid-column: 3;
     background-color: #F4F4F4;
-    
+    background-image: url("imports/pics/greenbag.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
  .head {
      grid-row: 2;
      grid-column: 3;
      background-color: #F4F4F4;
-   
+    background-image: url("imports/pics/makeup.jpg");
+    background-position: center;
+    background-size: contain;
  }
 
  .scoop {
     grid-row: 1;
     grid-column: 4;
     background-color: #F4F4F4;
+    background-image: url("imports/pics/purse.jpg");
+    background-size: cover;
+    background-position: center;
     
  }
 
@@ -259,7 +289,11 @@ h6 {
      grid-row: 2;
      grid-column: 4;
      background-color: #F4F4F4;
-     
+    background-image: url("imports/pics/black.jpg");
+    background-position: center;
+    background-size: cover;
+    
+    
  }
 
 .numberbar {
@@ -285,6 +319,7 @@ h6 {
     color: #FFFFFF;
     font-family: 'Open sans';
     font-size: 45px;
+    font-weight: bold;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
@@ -362,7 +397,7 @@ h6 {
     text-align: center;
     padding-left: 0;
     border-radius: 0px 24px 24px 0px;
-    padding-right: 10px;
+    
     font-family: 'Montserrat' sans-serif;
     font-size: 12px;
     border: none;
@@ -371,8 +406,7 @@ h6 {
 .media {
     grid-row: 6;
     grid-column: 1;
-    /*background-color: #F3F7F8;*/
-    background-color: yellow;
+    background-color: #F3F7F8;
     height: 250px;
     justify-content: space-evenly;
     display: flex;
@@ -454,7 +488,7 @@ li.company {
     font-family: 'Open sans' 300;
     font-size: 14px;
     line-height: 1.5;
-    background-color: tomato;
+    background-color: #1D1D1D
     text-align: left;
 }
 
@@ -462,7 +496,7 @@ li.company {
     font-family: 'Open sans';
     font-size: 14px;
     line-height: 1.5;
-    background-color: tomato;
+    background-color: #1D1D1D;
     text-align: left;
 }
 
@@ -481,7 +515,7 @@ li.company {
     margin-bottom: 5px;
     width: 250px;
     height: 20px;
-    background-color: tomato;
+    background-color: #1D1D1D;
     text-align: center;
     margin-top: 0;
     padding-right: 0;
@@ -491,12 +525,23 @@ li.company {
     flex-direction: column;
 selection:
 display: flex*/
+   
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
-        min-height: 3800px;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
         grid-template-rows: 750px 950px 970px 250px 632px 237px 298px; 
+        margin: 0 auto;
+        min-width: 100vw;
+    }
+    .title {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+       
     }
     nav {
         padding-top: 5px;
@@ -504,21 +549,30 @@ display: flex*/
         flex-direction: column;
         line-height: 1.5;
     }
+    ul {
+        justify-content: space-around;
+        flex-direction: column;
+    }
     .god {
         justify-content: center;
         height: 50vh;
         flex-direction: column;
+        text-align: center;
+        grid-template-rows: 100%;
     }
     h1 {
         font-size: 40px;
-        margin-top: 35vh;
+        margin-top: 15%;
+        max-width: 100vw;
     }
     .godp {
         text-align: center;
         justify-self: center;
         max-width: 90vw;
         margin: auto;
+        max-width: 100vw;
     }
+    
     .about {
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
@@ -627,6 +681,7 @@ display: flex*/
     .number {
         padding-top: 0;
         margin-top:  15px;
+        max-width: 480px;
     }
     .contact  {
        display: flex;
@@ -654,7 +709,7 @@ display: flex*/
     .media {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+       
     }
     ul.medicons {
         display: flex;
@@ -745,10 +800,148 @@ display: flex*/
        width: 200px;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .title {
+        flex-direction: column;
+        grid-template-rows: 750px 668px 888px 333px 632px 237px 298px; 
+        grid-template-rows: 100vw;
+        
+    }
+    img {
+        justify-content: center;
+        margin-left: 250px;
+    }
+    nav {
+        padding-left: 50px;
+        line-height: 50px;
+        padding-right: 0px;
+        margin-left: 50px;
+    }
+    ul {
+        margin-top: 0;
+        margin-right: 20px;
+        justify-items: flex-end;
+    }
+    .god {
+        align-content: center;
+        align-self: center;
+    }
+    h1 {
+        margin-top: 30%;
+        font-size: 60px;
+        font-weight: lighter;
+    }
+    .godp {
+        justify-items: center;
+        max-width:  650px;
+        font-size: 14px;
+        align-self: center;
+        flex-direction: column;
+        padding-bottom: 25px;
+        margin-left:auto;
+        margin-right: auto;
+        height: 45px;
+    }
+    .aboutus {
+        align-self: center;
+        max-height: 600px;
+        margin-top: 0;
+    }
+    h4 {
+        font-size: 30px;
+        height: 30px;
+    }
+    .usL {
+        max-width: 300px;
+        font-size: 16px;
+
+    }
+    .usS {
+        max-width: 300px;
+        font-size: 12px;
+    }
+    .products {
+        max-height: 775;
+    }
+    .emptycell {
+        max-width: 50vw;
+    }
+    .touch {
+        align-items: flex-start;
+        margin-top: 110px;
+    }
+    .email {
+        max-width: 200px;
+    }
+    .submit {
+        max-width: 90px;
+    }
+    .media {
+        flex-direction: column;
+        display: flex;
+    }
+    ul.mediaicons {
+        display: flex;
+        flex-flow: column;
+        justify-items: center;
+        margin-bottom: 15px;
+        height: 25px;
+        text-align: center;
+        width: 100px;
+    }
+    li.company {
+        justify-content: flex-end;
+        align-content: space-around;
+        margin-left: 40xp;
+        line-height: .5;
+        padding: 5px;
+    }
+    .address {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .data-align {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .logo-w {
+        align-self: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+        margin-right: auto;
+    }
+    .addr {
+        align-self: center;
+        line-height: 1.2;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .phone {
+        align-self: center;
+        line-height: 1.2;
+        align-content: center;
+    }
+    .nipw {
+        margin-top: 10px;
+        margin-left: auto
+        margin-right: 250px
+        height: 15px;
+        width: 100px;
+        padding: 10px;
+    }
+    .copywrite {
+        margin-top: auto;
+        height: 10px;
+    }
+
+ 
+
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {}
-*{
-    box-sizing: border-box;
-    
-}
