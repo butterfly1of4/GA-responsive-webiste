@@ -254,7 +254,7 @@ h6 {
     vertical-align: bottom;
     background-image: url("imports/pics/redbag.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }    
 
 .koo {
