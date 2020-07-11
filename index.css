@@ -4,7 +4,7 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: auto;
   margin: 0px;
   padding: 0px;
@@ -13,6 +13,7 @@ body {
 body {
   display: grid;
   grid-template-rows: 750px 668px 888px 333px 632px 237px 298px; /*3806*/
+  /*47em 42em 55em 21em 40em 15em 19em*/
   grid-template-columns: 100vw;
   background-size: auto;
   margin: 0;
@@ -36,30 +37,34 @@ nav {
   width: 100vw;
   align-content: center;
   justify-content: space-between;
-  padding: 25px;
+  padding: 2em;
 }
 ul {
   list-style-type: none;
-  margin-top: auto;
+  margin-top: 2em;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 0;
-  margin-left: 75%;
+  justify-self: flex-end;
+  /* max-width: 50%; */
+  display: inline;
+  float: right;
 
 }
 li {
   display: inline;
   text-align: right;
-  padding: 20px;
+  padding: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
 }
 
 img {
-  padding-right: 100px;
-  position: relative;;
-  margin-top: 30px;
-  margin-left: 15px;
+  padding-left: 4em;
+  position: aboslute;
+  align-self: center;
+  margin-top: 2em;
+
+ 
 }
 
 .god {
@@ -69,6 +74,7 @@ img {
   align-content: flex-start;
   flex-direction: column;
   width: 100vw;
+  height: 75vh;
 }
 
 h1 {
@@ -77,14 +83,14 @@ h1 {
   font-size: 80px;
   font-weight: 300;
   margin-top: 12%;
-  height: 100px;
-  margin-bottom: 10px;
+  /* height: 8em; */
+  margin-bottom: 1em;
 }
 
 .godp {
   font-size: 18px;
   font-family: "Open-sans", sans-serif;
-  height: 50px;
+  height: 4em;
   justify-self: center;
   text-align: center;
 }
@@ -95,7 +101,7 @@ button {
   background-position: center;
   color: #ffffff;
   font-size: 12px;
-  padding: 18px 47px 18px 47px;
+  padding: 10px 47px 18px 47px;
   margin: 50px;
   border-radius: 24px 24px 24px;
 }
@@ -112,6 +118,7 @@ button {
 h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 33px;
+  font-weight: bolder;
 }
 
 .usL {
@@ -141,11 +148,6 @@ h4 {
   align-items: stretch;
 }
 
-/*padded-multi-line {
-  display: inline;
-  background: orange;
-  box-shadow: 10px 0 0 orange, -10px 0 0 orange;
-}*/
 .hand {
   background-image: url("imports/group-20hand.jpg");
   background-size: contain;
@@ -244,12 +246,6 @@ h6 {
   align-content: flex-end;
   box-sizing: border-box;
 }
-/*
-@media screen and (min-width: 500px){
-    .grid{ min-width: 400px;
-            padding: 10px;
-    }
-}*/
 
 .parcel {
   grid-row: 1 / span 2;
@@ -337,16 +333,6 @@ h6 {
   grid-template-columns: 50% 50%;
   flex-direction: column;
 }
-/*
-@media screen and (max-width: 900px){
-    .contact {
-        justify-content: center;
-        align-self: stretch;
-        align-content: center;
-        height: 750px;
-        margin-top: 50px;
-    }
-}*/
 
 .emptycell {
   grid-row: 1;
@@ -356,9 +342,10 @@ h6 {
   justify-content: flex-start;
   grid-row: 1;
   grid-column: 2;
-  height: 50%;
+  height: 20em;
+  width: 30em;
   align-items: center;
-  margin: auto 15% 25% 15%;
+  margin: 7em 8em auto 7em;
   flex-direction: column;
 }
 
@@ -377,7 +364,7 @@ h6 {
 .inputemail {
   grid-row: 1;
   grid-column: 2;
-  margin: auto 15% 22% 15%;
+  margin: auto 8em 11em 7em;
   padding-top: 15px;
   flex-direction: row;
   align-self: flex-end;
@@ -420,25 +407,28 @@ h6 {
   height: 250px;
   justify-content: space-evenly;
   display: flex;
-  width: 100%;
+  width: 100vw;
   align-items: center;
 }
 
-ul.medicons {
+.medicons {
   display: flex;
   list-style: none;
   align-content: center;
-  height: 25px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* height: 25px; */
+  padding-top: 12em;
+  padding-bottom: 13em; 
+  width: 100vw;
   justify-content: space-evenly;
+  box-sizing: border-box;
 }
 
-li.company {
-  max-height: 25px;
+.company {
+  max-height: 3em;
   justify-content: center;
   align-items: center;
   padding-left: 1px;
+  box-sizing: border-box;
 }
 
 .bbc {
@@ -530,7 +520,7 @@ li.company {
 selection:
 display: flex*/
 /* 
-@media only screen and (min-device-width: 320px)  {
+@media only screen and (min-device-width: 320px) and (max-wdth: 480px)  {
   body {
     justify-content: space-between;
     flex-direction: column;
