@@ -1,6 +1,6 @@
-
-@media only screen and (max-width: 480px)  {
-  html,body {
+@media only screen and (max-width: 480px) {
+  html,
+  body {
     margin: 0 auto;
     width: 100vw;
     background-size: auto;
@@ -9,13 +9,12 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-}
-  
+  }
+
   nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
   }
   ul {
     justify-content: space-around;
@@ -30,7 +29,7 @@
     flex-direction: column;
     text-align: center;
     grid-template-rows: 100%;
-   }
+  }
   h1 {
     font-size: 40px;
     margin-top: 15%;
@@ -43,32 +42,39 @@
     margin: auto;
     max-width: 100vw;
   }
+  button {
+    margin-top: 2em;
+  }
+.about {
+    max-height: none;
 
-  .about {
-  display: flex;
-  flex-direction: column;
-}
-.aboutlabel {
-  padding-top: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    grid-template-rows: repeat(auto-fit, minmax(50%, 1fr));
+    grid-template-columns: 100%;;
 }
 .aboutus {
-  grid-row: 1;
-  padding-top: 0;
-  max-width: 100vh;
-  margin-right: 15px;
-  text-align: left;
+    grid-row: 1;
+    padding: 0;
+    z-index: 1;
+    width: 100vw;
 }
-.usS {
-  flex-direction: column;
-  max-width: 80vw;
+.aboutlabel {
+    max-width: 100vw;
+}
+.usL {
+    max-width: 100vw;
 }
 .hand {
+    grid-row: 2;
+    width: aut0;
+    padding: 0;
 
-    width: 100vw;
-    margin-bottom: 3em;
-}}
-    /*
 }
+
+}
+  /*
+
   .products {
     max-width: 100vw;
     min-height: 1200px;
@@ -132,6 +138,8 @@
     grid-column: 1;
     grid-row: 4;
   }
+}
+/*
   .blsquare {
     line-height: 1.3;
     padding-bottom: 0px;

@@ -81,7 +81,7 @@ h1 {
   font-weight: 300;
   margin-top: 12%;
   /* height: 8em; */
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 .godp {
@@ -99,17 +99,18 @@ button {
   color: #ffffff;
   font-size: 12px;
   padding: 10px 47px 18px 47px;
-  margin: 50px;
+  /* margin: 50px; */
   border-radius: 24px 24px 24px;
 }
 .about {
   grid-row: 2;
   grid-column: 1;
   background-color: #f3f7f8;
-
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
+  /* display: flex; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: auto; */
 }
 
 h4 {
@@ -122,7 +123,7 @@ h4 {
   font-family: "Playfair display", serif;
   font-size: 20px;
   color: #95989a;
-  flex-direction: row;
+  /* flex-direction: row; */
   box-sizing: border-box;
 }
 
@@ -137,12 +138,11 @@ h4 {
   text-align: left;
   grid-column: 1;
   word-wrap: normal;
-  padding-top: 25%;
-  padding-bottom: 25%;
-  padding-left: 50px;
   box-sizing: border-box;
-  padding-right: 10px;
+  margin: auto 2% auto 10%;
   align-items: stretch;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .hand {
@@ -150,13 +150,14 @@ h4 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  /* display: flex; */
   height: 515px;
-  width: auto;
-  justify-content: flex-end;
+  /* width: auto; */
+  /* justify-content: flex-end;
   align-self: center;
-  align-items: flex-end;
+  align-items: flex-end; */
   padding: 120px 150px 12px auto;
-  margin-right: 10%;
+  margin: auto 10% auto 1em;
   grid-column: 2;
 }
 
