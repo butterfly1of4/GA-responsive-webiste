@@ -179,12 +179,11 @@ h6 {
 }
 .viewmore {
   color: #1d1d1d;
-
   align-items: flex-start;
   white-space: nowrap;
   /* padding-bottom: 0; */
   /* align-self: flex-end; */
-  padding-right: 1em;
+  padding-right: 3%;
   /* display: inline-block; */
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -192,7 +191,7 @@ h6 {
   /* width: 100px; */
 }
 .arrow {
-  margin-right: 2%;
+  margin-left: 2%;
   height: 15px;
 }
 .producthead {
@@ -232,12 +231,12 @@ h6 {
 }
 .container {
   display: flex;
-  padding: 122px 120px 122px 120px;
-  background-position: center;
+  padding: 10%;
+  /* background-position: center;
   background-size: cover;
   padding-bottom: 122px;
   margin-bottom: 0;
-  height: 705px;
+  height: 705px; */
 }
 
 .grid {
