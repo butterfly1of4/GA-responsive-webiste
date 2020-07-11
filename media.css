@@ -134,41 +134,28 @@
     margin-top: 1em;
   }
   .touch {
-    
-  }
-  .largertext {
-    margin-top: 2em;
-    margin-left: auto;
+    width: 80vw;
   }
   .inputemail {
-    max-width: 300px;
+    max-width: 70vw;
     justify-content: center;
     justify-self: center;
     padding-left: 23px;
     flex-wrap: nowrap;
   }
-  .email {
-    width: 180px;
-    height: 35px;
-
-    margin-left: 20px;
-  }
-  .submit {
-    width: 70px;
-    height: 35px;
-  }}
-  /*
+  
   .media {
     display: flex;
     flex-direction: column;
   }
-  ul.medicons {
+  .medicons {
     display: flex;
     flex-flow: column;
     width: 100px;
     justify-items: center;
     text-align: center;
     margin-bottom: 15px;
+    align-items: center;
   }
   li.company {
     justify-content: flex-end;
@@ -214,17 +201,19 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
+  .address {
+      max-width: 100vw;
+      flex-direction: column;
+  }
   .data-align {
-    display: flex;
-    flex-flow: column;
-    max-width: 310px;
-    justify-content: space-evenly;
-    align-items: center;
+ flex-flow: wrap;
+
   }
   .logo-w {
     padding-bottom: 3px;
     align-self: center;
   }
+
   .addr {
     align-self: center;
     line-height: 1;
@@ -249,7 +238,7 @@
     height: 10px;
     width: 200px;
   }
-}
+}/*
 @media only screen and (min-device-width: 450px) {
   .nav {
     width: 100vw;
@@ -368,6 +357,7 @@
     line-height: 0.5;
     padding: 5px;
   }
+  
   .address {
     display: flex;
     flex-flow: column;
