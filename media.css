@@ -42,39 +42,33 @@
     max-width: 90vw;
     margin: auto;
     max-width: 100vw;
-  }}
-/* 
-  .about {
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-  }
-  .aboutlabel {
-    padding-top: 0;
-  }
-  .aboutus {
-    grid-row: 1;
-    padding-top: 0;
-    max-width: 100vh;
-    margin-right: 15px;
-    text-align: left;
-  }
-  .usS {
-    flex-direction: column;
-    max-width: 80vw;
-  }
-  .hand {
-    grid-row: 2;
-    margin-left: 15px;
-    max-width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background-image: url("imports/top hand.png");
-    background-image: url("imports/bottom hand.png");
-    height: 200px;
-    width: 150px;
-    justify-items: center;
   }
 
+  .about {
+  display: flex;
+  flex-direction: column;
+}
+.aboutlabel {
+  padding-top: 0;
+}
+.aboutus {
+  grid-row: 1;
+  padding-top: 0;
+  max-width: 100vh;
+  margin-right: 15px;
+  text-align: left;
+}
+.usS {
+  flex-direction: column;
+  max-width: 80vw;
+}
+.hand {
+
+    width: 100vw;
+    margin-bottom: 3em;
+}}
+    /*
+}
   .products {
     max-width: 100vw;
     min-height: 1200px;
