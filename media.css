@@ -76,11 +76,9 @@
     max-height: none;
   }
   .producthead {
-  
     flex-wrap: wrap;
     max-width: 100vw;
     text-align: left;
- 
   }
   .buyme {
     font-size: 20px;
@@ -97,20 +95,20 @@
     padding: 0;
     margin: 5px auto 10px 15px;
     line-height: 0.5;
-  } 
+  }
   .container {
     display: flex;
     flex-direction: column;
     /* min-height: 950px; */
     max-width: 100vw;
-   padding:1em ;
+    padding: 1em;
   }
- 
+
   .grid {
     display: grid;
     max-width: 100vw;
-  } 
-/* .parcel{
+  }
+  /* .parcel{
  grid-row: 1/ span2;
 
 }
@@ -119,16 +117,16 @@
 
 .scoop{}
 .mari{}} */
-.numberbar {
+  .numberbar {
     flex-direction: column;
-}
+  }
   .blsquare {
     padding-bottom: 0px;
     height: 100px;
     margin-top: 7px;
   }
   .emptycell {
-      display: none;
+    display: none;
   }
   .number {
     margin-top: 1em;
@@ -143,7 +141,7 @@
     padding-left: 23px;
     flex-wrap: nowrap;
   }
-  
+
   .media {
     display: flex;
     flex-direction: column;
@@ -202,12 +200,11 @@
     margin-bottom: 10px;
   }
   .address {
-      max-width: 100vw;
-      flex-direction: column;
+    max-width: 100vw;
+    flex-direction: column;
   }
   .data-align {
- flex-flow: wrap;
-
+    flex-flow: wrap;
   }
   .logo-w {
     padding-bottom: 3px;
@@ -238,170 +235,12 @@
     height: 10px;
     width: 200px;
   }
-}/*
-@media only screen and (min-device-width: 450px) {
-  .nav {
-    width: 100vw;
-  }
-  .ul {
-    flex-flow: wrap;
-  }
-  .god {
-    margin-top: 66vh;
-    align-content: flex-end;
-  }
-  .button {
-    align-content: flex flex-end;
-  }
 } 
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .title {
-    flex-direction: column;
-    grid-template-rows: 750px 668px 888px 333px 632px 237px 298px;
-    grid-template-rows: 100vw;
-  }
-  img {
-    justify-content: center;
-    margin-left: 250px;
-  }
-  nav {
-    padding-left: 50px;
-    line-height: 50px;
-    padding-right: 0px;
-    margin-left: 50px;
-    margin-top: 0;
-    padding-top: 5px;
-    text-align: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-self: flex-start;
-  }
-  ul {
-    margin-top: 0;
-    margin-right: 20px;
-    justify-items: flex-end;
-    padding: 0;
-  }
-  .god {
-    align-content: center;
-    align-self: center;
-    position: absolute;
-  }
-  h1 {
-    margin-top: 30%;
-    font-size: 60px;
-    font-weight: lighter;
-  }
-  .godp {
-    justify-items: center;
-    max-width: 650px;
-    font-size: 14px;
-    align-self: center;
-    flex-direction: column;
-    padding-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 45px;
-  }
-  .aboutus {
-    align-self: center;
-    max-height: 600px;
-    margin-top: 0;
-  }
-  h4 {
-    font-size: 30px;
-    height: 30px;
-  }
-  .usL {
-    max-width: 300px;
-    font-size: 16px;
-  }
-  .usS {
-    max-width: 300px;
-    font-size: 12px;
-  }
-  .products {
-    max-height: 775;
-  }
-  .emptycell {
-    max-width: 50vw;
-  }
-  .touch {
-    align-items: flex-start;
-    margin-top: 110px;
-  }
-  .email {
-    max-width: 200px;
-  }
-  .submit {
-    max-width: 90px;
-  }
-  .media {
-    flex-direction: column;
-    display: flex;
-  }
-  ul.mediaicons {
-    display: flex;
-    flex-flow: column;
-    justify-items: center;
-    margin-bottom: 15px;
-    height: 25px;
-    text-align: center;
-    width: 100px;
-  }
-  li.company {
-    justify-content: flex-end;
-    align-content: space-around;
-    margin-left: 40xp;
-    line-height: 0.5;
-    padding: 5px;
-  }
-  
-  .address {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .data-align {
-    display: flex;
-    flex-direction: column;
-    height: 250px;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .logo-w {
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 150px;
-    margin-right: auto;
-  }
-  .addr {
-    align-self: center;
-    line-height: 1.2;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .phone {
-    align-self: center;
-    line-height: 1.2;
-    align-content: center;
-  }
-  .nipw {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: 250px;
-    height: 15px;
-    width: 100px;
-    padding: 10px;
-  }
-  .copywrite {
-    margin-top: auto;
-    height: 10px;
-  }
-
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  }
-} */
+@media only screen and (max-device-width: 1400px) {
+    .submit{
+        margin: -10vw;
+    }
+    .products {
+        max-height: min-content;
+    }
+}
