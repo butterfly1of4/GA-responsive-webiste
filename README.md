@@ -1,7 +1,7 @@
 # GA-responsive-webiste
 
-General Assembly Logo
-Build a Responsive Website!
+General Assembly Logo 
+Build a Responsive and awesome website
 For your first project, you're going to build a responsive website using HTML and CSS. You'll pick one of a few provided designs and build an honest replica of it.
 
 Instructions
@@ -13,7 +13,7 @@ Please turn in your submission by the deadline on your cohort calendar.
 Requirements
 Pick a design implemented in Adobe XD from the provided collection of designs.
 
-You can find the designs here.
+You can find the designs here. just check the link
 
 Pick from the Easy or Medium folders. Pick something that seems challenging but manageable!
 
