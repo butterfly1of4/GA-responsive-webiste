@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: repeat(auto-fit(minmax(300px, 1fr)));
+  grid-template-columns: 100vw;
+  background-size: cover;
+  margin: 0;
+  background-color: transparent;
+}
+/* Navbar */
+.row_1 {
+  display: grid;
+  grid-template-rows: 15% 85%;
+  background-image: url("imports/rectangle-9fea.jpg");
+  margin-top: 1%;
+  margin: 0 0 !important;
+  /* height: 47em; */
+}
+.navBar {
+  grid-row: 1;
+  display: flex;
+  flex-flow: row;
+  background-color: transparent;
+  height: 10vh;
+  box-sizing: border-box;
+  max-height: 25vh;
+}
+
+.nipB {
+  width: 9.5em;
+  height: 1.5em;
+  margin-top: 0.75em;
+}
+ul {
+  display: flex;
+  list-style: none;
+  background-color: transparent;
+}
+li {
+  padding-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+}
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 10%;
+  width: 100vw;
+  background-color: transparent;
+}
+/* Landing */
+.title {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0%;
+  justify-content: center;
+}
+.god {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20%;
+  text-align: center;
+}
+.heading {
+  font-family: "Playfair display", serif;
+  font-size: 80px;
+  font-weight: 300;
+}
+.godp {
+  font-size: 18px;
+  font-family: "Open-sans", sans-serif;
+}
+.learn {
+  background-color: #1005ff;
+  border-radius: 24px;
+  color: #ffffff;
+  font-size: 12px;
+  height: 5em;
+  width: 14em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+}
+/* About */
+.about {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  background-color: #f3f7f8;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-weight: bolder;
+}
+.hand {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+}
+.aboutImage {
+  display: flex;
+  max-width: 50vw;
+  margin: auto 18% auto auto;
+}
+.aboutus {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto 1% auto 20%;
+  width: 50%;
+}
+.aboutlabel {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-weight: bolder;
+}
+
+.usL {
+  font-family: "Playfair display", serif;
+  font-size: 20px;
+  color: #95989a;
+  box-sizing: border-box;
+}
+.usS {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #95989a;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+/* Products */
+.products {
+  display: flex;
+  flex-direction: column;
+  grid-row: 3;
+}
+.producthead {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 5%;
+}
+.buyme {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-weight: bolder;
+  margin-left: 5%;
+}
+.leftview {
+  display: flex;
+  margin-right: 6%;
+  align-items: center;
+}
+.arrow {
+  padding-left: 15px;
+  padding-top: 3px;
+}
+.viewmore {
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.container {
+  margin: 0 5% 5% 5%;
+  height: 100%;
+}
+.productgrid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+grid-template-rows: 25vh 25vh;
+  max-width: 99%;
+  height: 100%;
+  grid-gap:3%;
+}
+.gridbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.parcel {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  background-color: #f4f4f4;
+  background-image: url("imports/pics/redbag.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.koo {
+  grid-row: 1;
+  grid-column: 3;
+  background-color: #f4f4f4;
+  background-image: url("imports/pics/greenbag.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.head {
+  grid-row: 2;
+  grid-column: 3;
+  background-color: #f4f4f4;
+  background-image: url("imports/pics/makeup.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.scoop {
+  grid-row: 1;
+  grid-column: 4;
+  background-color: #f4f4f4;
+  background-image: url("imports/pics/purse.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mari {
+  grid-row: 2;
+  grid-column: 4;
+  background-color: #f4f4f4;
+  background-image: url("imports/pics/black.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.price {
+  /* color: #666666; */
+  color: black;
+  font-size: 15px;
+  font-family: "Open sans";
+  margin-top: 1%;
+}
+h6 {
+  color: #1005ff;
+  font-size: 16px;
+  font-family: "Montserrat", serif;
+  margin-bottom: 0;
+}
+.textbox {
+  margin: auto auto 0 0;
+}
+/* NumberDiv */
+.numberbar {
+  grid-row: 4;
+
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  ;
+}
+.blsquare {
+  color: #ffffff;
+  font-family: "Playfair display", serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 3%;
+}
+.number {
+  color: #ffffff;
+  font-family: "Open sans";
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 3%;
+}
+/* Contact */
+.contact{
+  grid-row: 5;
+  display: grid;
+  background: linear-gradient(to left, #ffffff 50%, #f4f4f4 50%);
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+}
+.emptycell {
+  grid-row: 1;
+  grid-column: 1;
+  height: 50vh;
+}
+.touch {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 14% 18% 14%;
+}
+.largertext {
+  font-family: "Playfair display", serif;
+  font-size: 20px;
+  color: #666666;
+}
+.smallertext {
+  color: #666666;
+  font-family: "Open sans";
+  font-size: 14px;
+}
+.inputemail {
+  display: flex;
+  flex-direction: row;
+  height: 3em;
+  width: 100%;
+  margin-top: 10%;
+}
+.email {
+  width: 75%;
+  color: #939393;
+  border-radius: 24px 0px 0 24px;
+  font-family: "Playfair display", serif;
+  font-size: 12px;
+  padding-left: 4%;
+  border: 1px solid #1d1d1d;
+
+}
+.submit {
+  width: 25%;
+  background: #1005ff;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0px 24px 24px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  border: 1px solid #1d1d1d;
+  border-left: none;
+}
+/* Media */
+.media {
+  grid-row: 6;
+  background-color: #f3f7f8;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  height: 25vh;
+}
+.medicons {
+  width: 100%;
+}
+.mediaWrapper {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+/* Address */
+.address {
+  color: #ffffff;
+  grid-row: 7;
+  background-color: #1d1d1d;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 25vh;
+}
+.data-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+.addr {
+  font-family: "Open sans" 300;
+  font-size: 14px;
+  line-height: 1.5;
+}

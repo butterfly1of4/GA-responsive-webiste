@@ -391,7 +391,7 @@ h6 {
 }
 
 .submit {
-  color: #ffffff;
+
   height: 40px;
   width: 12vw;
   background: #1005ff;
