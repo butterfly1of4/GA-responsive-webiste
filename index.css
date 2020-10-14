@@ -211,7 +211,8 @@ h4 {
   background-color: #f4f4f4;
   background-image: url("imports/pics/greenbag.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .head {
   grid-row: 2;
@@ -219,7 +220,8 @@ h4 {
   background-color: #f4f4f4;
   background-image: url("imports/pics/makeup.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .scoop {
   grid-row: 1;
@@ -385,6 +387,8 @@ h6 {
   font-size: 14px;
   line-height: 1.5;
 }
+
+
 @media screen and (max-width: 1025px) {
   .about {
     height: 50vh;
